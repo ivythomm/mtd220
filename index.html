@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>MTD220 ECA Page</title>
+        <!--Meta-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="./css/courses.css">
+        <link rel="stylesheet" href="./css/about.css">
+        <link rel="stylesheet" href="./css/contact.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+
+        <!-- nav -->
+        <script>
+            $(document).ready(function()
+            {
+                $("#navbar").load(common/navbar.html);
+
+                $("#header").load(common/carousel.html);
+
+                $("#credentials").load(common/content.html);
+
+                $("#courses").load(common/courses.html);
+
+                $("#footer").load(common/about.html);
+            });
+        </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <div id="logo">
+            <a href="index.html">
+                <img src="images/logo.png" class="img-fluid" alt="ByteAcademy Logo"/>
+            </a>
+        </div>
+
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+            </ul>
+
+            <button type="button" class="btn btn-primary me-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Join for Free
+            </button>
+        </div>
+    </div>
+</nav>
+
+  <div id="header">
+
+    <div class="container-fluid">
+      <div class="row align-items-center"> 
+        <div class="col-lg-6 text-lg-start text-center">
+            <h1>Unlock Your Potential</h1>
+            <p>Flexible learning from world-class institutes, anytime, anywhere.</p>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Join for Free
+            </button>        </div>
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+            <img src="images/heroimage.png" class="img-fluid mx-auto d-block" alt="Student holding laptop">
+        </div>
+    </div>
+  </div>
+
+  <div id="credentials">
+    <div class="container-fluid text-center">
+      <p>We collaborate with 100+ leading universities and companies</p>
+      <div class="row align-items-center g-0 company-banner">
+        <div class="col">
+          <div class="credentials">
+            <a href="https://online.stanford.edu/free-courses" target="_blank" >
+            <img src="images/stanford-university-logo.webp" class="credientials-image" alt="Stanford University logo" >
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="credentials">
+            <a href="https://grow.google/intl/ALL_sg/skillsignitionsg/?category=for-individuals&tab=traineeship-program" target="_blank" >
+            <img src="./images/google-logo.webp" class="credientials-image" alt="Google logo" >
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="credentials">
+            <a href="https://learning.adobe.com/certification.html" target="_blank" >
+            <img src="images/Adobe-logo-png.png" class="credientials-image" alt="Adobe logo" >
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="credentials">
+            <a href="https://academy.hubspot.com/certification-overview" target="_blank" >
+            <img src="images/HubSpot_Logo.png" class="credientials-image" alt="Hubspot logo" >
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="credentials">
+            <a href="https://www.imperial.ac.uk/student-records-and-data/for-current-students/degree-certificates/" target="_blank" >
+            <img src="images/Imperial_logo.png" class="credientials-image" alt="Imperial logo" >
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="courses">
+    <div class="courses-content">
+        <h5 style="opacity: 60%">Specialisations and Professional Certificates</h5>
+        <h2 style="padding-top: 16px">Most Popular Certifications</h2>
+        <p>Explore our most popular programs</p>
+    </div>
+
+    <div class="row" style="margin-bottom: 32px;">
+        <div class="col">
+            <div class="card">
+                <img src="images/dataanalytics.jpg" class="card-img-top" alt="Google Data Analytics">
+                <div class="card-body">
+                    <div class="card-header">
+                        <img src="images/smallgooglelogo.png" class="card-img-logo" alt="Small Google logo">
+                        <h5 class="card-title">Google</h5>
+                    </div>
+                    <div class="card-text-container">
+                        <p class="card-text">Google Data Analytics</p>
+                        <p class="card-category">Professional Certificate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="images/genai.jpg" class="card-img-top" alt="IBM Gen AI">
+                <div class="card-body">
+                    <div class="card-header">
+                        <img src="images/IBM_logo.png" class="card-img-logo" alt="IBM logo">
+                        <h5 class="card-title">IBM</h5>
+                    </div>
+                    <div class="card-text-container">
+                        <p class="card-text">IBM GenAI and Engineering</p>
+                        <p class="card-category">Professional Certificate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="images/digitalmarketing.jpg" class="card-img-top" alt="Google Digital Marketing">
+                <div class="card-body">
+                    <div class="card-header">
+                        <img src="images/smallgooglelogo.png" class="card-img-logo" alt="Small Google logo">
+                        <h5 class="card-title">Google</h5>
+                    </div>
+                    <div class="card-text-container">
+                        <p class="card-text">Google Digital Marketing</p>
+                        <p class="card-category">Professional Certificate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <a href="courses.html" style="width: 100%" class="btn btn-outline-primary" type="button">Explore Courses></a>
+    </div>
+      <footer class="py-3">
+          <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <p class="mb-0">&copy; 2025 ByteAcademy</p>
+              <div style="display: flex; justify-content: space-between; gap:12px">
+                  <a href="about.html" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">About</a>
+                  <a href="contact.html" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Contact</a>
+              </div>
+          </div>
+      </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Join for Free</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+              <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="+65 XXXXXXXX">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
