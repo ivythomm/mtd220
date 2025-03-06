@@ -1,0 +1,10 @@
+.contactus{
+    background-color: #e1f4f0;
+    padding: 50px;
+}
+
+.contactus h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}

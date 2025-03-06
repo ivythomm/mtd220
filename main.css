@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+#logo{
+    width: 100px;
+    height: auto;
+    padding: 0 10px;
+}
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: rgb(248, 248, 248) !important;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #f0127a;
+}
+
+.btn-primary{
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#header .container-fluid {
+    color: #62c2ac;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media (min-width: 1200px) {
+    .container-fluid {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+.align-items-center{
+    padding: 0 64px
+}
+
+#header .container-fluid h1{
+    color: #4eaa95;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#header .container-fluid img{
+    width: 75%;
+    height: auto;
+}
+
+.btn-secondary {
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#header .container-fluid p {
+    font-size: 20px;
+}
+
+#credentials .container-fluid{
+    background-color: rgb(248, 248, 248);
+    color: gray;
+    padding: 56px 0 40px 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: large;
+    height: 50%;
+}
+.company-banner{
+    animation: marquee 20s linear infinite;
+}
+#credentials .credentials img {
+    max-width: 80px;
+    height: auto;
+}
+
+@media (min-width: 992px) {
+    #credentials .credentials img {
+        max-width: 120px;
+    }
+}
+
+
+/* Optional: Ensure cards look consistent */
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+footer{
+    background-color: #f0127a;
+    color: #eee;
+    padding: 20px 0;
+}
+
+
+/*------------------------------------
+- COLOR primary
+------------------------------------*/
+.alert-primary {
+    color: #7f0840;
+    background-color: #fcd1e5;
+    border-color: #fabeda;
+}
+
+.alert-primary hr {
+    border-top-color: #f9a6cd;
+}
+
+.alert-primary .alert-link {
+    color: #4f0527;
+}
+
+.badge-primary {
+    color: #fff;
+    background-color: #f0127a;
+}
+
+.badge-primary[href]:hover, .badge-primary[href]:focus {
+    color: #fff;
+    background-color: #c20c61;
+}
+
+.bg-primary {
+    background-color: #f0127a !important;
+}
+
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+    background-color: #c20c61 !important;
+}
+
+.border-primary {
+    border-color: #f0127a !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #f0127a;
+    border-color: #f0127a;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #d10d68;
+    border-color: #c20c61;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #f0127a;
+    border-color: #f0127a;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #d10d68;
+    border-color: #c20c61;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #7ecaba;
+    border-color: #7ecaba;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #6ab3a3;
+    border-color: #6ab3a3;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(240, 18, 122, 0.5);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #f0127a;
+    border-color: #f0127a;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #c20c61;
+    border-color: #b40b5a;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(240, 18, 122, 0.5);
+}
+
+.btn-outline-primary {
+    color: #f0127a;
+    background-color: transparent;
+    border-color: #f0127a;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #f0127a;
+    border-color: #f0127a;
+}
+
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(240, 18, 122, 0.5);
+}
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+    color: #f0127a;
+    background-color: transparent;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #f0127a;
+    border-color: #f0127a;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(240, 18, 122, 0.5);
+}
+
+.list-group-item-primary {
+    color: #7f0840;
+    background-color: #fabeda;
+}
+
+.list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
+    color: #7f0840;
+    background-color: #f9a6cd;
+}
+
+.list-group-item-primary.list-group-item-action.active {
+    color: #fff;
+    background-color: #7f0840;
+    border-color: #7f0840;
+}
+
+.table-primary,
+.table-primary > th,
+.table-primary > td {
+    background-color: #fabeda;
+}
+
+.table-hover .table-primary:hover {
+    background-color: #f9a6cd;
+}
+
+.table-hover .table-primary:hover > td,
+.table-hover .table-primary:hover > th {
+    background-color: #f9a6cd;
+}
+
+.text-primary {
+    color: #f0127a !important;
+}
+
+a.text-primary:hover, a.text-primary:focus {
+    color: #c20c61 !important;
+}
+
+
+/* Animation */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
